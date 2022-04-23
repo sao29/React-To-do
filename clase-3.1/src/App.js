@@ -19,6 +19,12 @@ const App = () => {
 
  const cambio =()=> {
    setcontador(contador+1);
+   if(contador+1 >= reyesGodos.length){
+     setcontador(0)
+   }
+
+   setmensaje(<h2>la aficion principal de <span className="Rojo"> {reyesGodos[contador].nombre}</span> es <span className="Verde">
+     {reyesGodos[contador].aficion}</span> </h2>)
  }
   return (
     <>
