@@ -2,9 +2,9 @@ import React from 'react'
 import  './TodoSearch.css';
 import { useState } from 'react';
 
-function TodoSearch() {
+function TodoSearch({cambio, setCambio}) {
 
-  const [cambio, setCambio] = useState("");
+  // const [cambio, setCambio] = useState("");
 
   // const cambiosEvento = (event)=>{
   //   console.log(event.target.value);
